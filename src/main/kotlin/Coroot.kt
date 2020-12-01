@@ -81,4 +81,5 @@ fun <A> Collection<A>.forEachParallel(f: suspend (A) -> Unit): Unit {
       }.forEach { it.await() }
    }
    cachedPool.close()
+   // more testing
 }
