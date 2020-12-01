@@ -20,6 +20,8 @@ fun main() {
    println("files: ${filesToExamine.size} - walk time: $time")
 
    //////////////////////////////////////////////////////////////////////////////
+   // testing
+   
    val kCounter = AtomicInteger(0)
    val readTime = measureTimeMillis {
       for (i in 1..50) {
