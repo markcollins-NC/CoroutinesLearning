@@ -66,7 +66,9 @@ fun <A> Collection<A>.forEachParallel(f: suspend (A) -> Unit): Unit {
    }
    // this is a line in the middle!
    val queue = ArrayBlockingQueue<Runnable>(queueSize)
-	// added another line
+
+	val x = 1
+	
    val cachedPool =
       ThreadPoolExecutor(threadCount, threadCount, 5L, TimeUnit.SECONDS, queue)
          .apply {
