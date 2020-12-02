@@ -12,7 +12,7 @@ fun foo() = flow {
 }
 
 fun fillin(): String {
-   val whatever = ""
+   val whatever = "defabc"
    return whatever
 }
 
